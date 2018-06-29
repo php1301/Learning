@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/javascript.js"></script>
+    <title>Bài 6.1: Đăng ký thành viên</title>
+</head>
+
+<body>
+    <section id="content" align="center">
+        <div style="background-color: #f3f3f3">
+            <table cellpadding="2" cellspacing="12px" align="center" width="900px">
+                <caption>
+                    <h1 align="center">ĐĂNG KÝ THÀNH VIÊN</h1>
+                </caption>
+                <tr>
+                    <td class="right">Họ và tên:</td>
+                    <td class="left">
+                        <input type="text" id="hoten" placeholder="họ tên" />
+                        <span id="lblhoten" style="color: #FF0004"> </span>
+                    </td>
+
+                    <td class="right">Giới tính:</td>
+                    <td class="left">
+                        <input type="checkbox" id="gtinh" />
+                        <label for="gtinh">Nam</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">Ngày sinh:</td>
+                    <td class="left">
+                        <input type="date" id="datepicker" placeholder="ngày sinh" />
+                        <span id="lbldatepicker" style="color: #FF0004"></span>
+                    </td>
+
+                    <td class="right">Nghề nghiệp:</td>
+                    <td class="left">
+                        <select id="nnghiep">
+                            <option selected="selected" value="0">--- Chọn trong danh sách ---</option>
+                            <option value="1">Sinh viên</option>
+                            <option value="2">Công nhân viên chức</option>
+                            <option value="1">Kinh doanh</option>
+                            <option value="1">Khác</option>
+                        </select>
+                        <span id="lblnnghiep" style="color: #FF0004"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">Email:</td>
+                    <td class="left">
+                        <input type="email" id="email" placeholder="email" />
+                        <span id="lblemail" style="color: #FF0004"></span>
+                    </td>
+
+                    <td class="right">Điện thoại:</td>
+                    <td class="left">
+                        <input type="tel" id="dthoai" placeholder="điện thoại" />
+                        <span id="lbldthoai" style="color: #FF0004"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="right">Tên đăng nhập:</td>
+                    <td class="left" colspan="2">
+                        <input type="text" id="dnhap" placeholder="tên đăng nhập" />
+                        <td>
+                            <span id="lbldnhap" style="color: #FF0004">
+                        </td>
+                        </span>
+                        </td>
+                </tr>
+                <tr>
+                    <td class="right">Mật khẩu:</td>
+                    <td class="left">
+                        <input type="password" id="mkhau" placeholder="mật khẩu" />
+                        <span id="lblmkhau" style="color: #FF0004"></span>
+                    </td>
+
+                    <td class="right">Nhập lại mật khẩu:</td>
+                    <td class="left">
+                        <input type="password" id="lmkhau" placeholder="nhập lại mật khẩu" />
+                        <span id="lbllmkhau" style="color: #FF0004"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="right">Ghi chú:</td>
+                    <td colspan="3">
+                        <textarea id="ghichu" placeholder="ghi chú"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <input type="submit" id="dongy" value="Đồng ý" onclick="return DangKyThanhVien()" />
+                    </td>
+                </tr>
+            </table>
+
+            <div id="ketqua" style="line-height: 2">[Thông tin xác nhận]</div>
+        </div>
+    </section>
+</body>
+
+</html>

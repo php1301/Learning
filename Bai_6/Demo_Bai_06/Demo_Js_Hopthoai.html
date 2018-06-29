@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Minh họa hop thoai</title>
+	
+</head> 
+<body>
+
+	<div id="cauchao" style="color:#FF0066">Chào bạn</div>
+
+	<form id="nhap">
+		Nhập tên mới: <input type="text" id="ten" size="30" value="Phạm Thị Nhung" />
+		<p>
+			<!-- ten.value : truy xuất giá tr5i của 1 đ.khiển -->
+			<input type="button" name="mo" value="Xuất câu chào" onclick="alert('Chào bạn ' + ten.value ); " /> <!-- nhúng js vào trang HTML -->
+		</p>
+		<p>
+			<input type="button" name="lenh" value="Thay đổi câu chào" 
+				onclick="traloi = confirm('Có đồng ý đổi câu chào không?');
+						 if (traloi==true)  <!-- Nhấn nút OK -->
+						 	 alert('Chào bạn ' + ten.value + ', chúc mừng bạn đến với Js' );
+						 else  <!-- Nhấn nút Cancel -->
+						 	 alert('Chào bạn ' + ten.value);
+				" 
+			/>
+		</p>
+		<p>
+			<input type="button" name="nut" value="hộp thoại prompt" 
+					onclick="kq = prompt('Hãy nhập tên của bạn','Phạm Thị Nhung');
+						if (kq!=null) <!-- Nhấn nút OK -->
+							cauchao.innerText='Hello ' + kq;   <!--innerText: thuộc tính đại diện cho nội dung của tag -->
+						else  <!-- Nhấn nút Canel -->
+							cauchao.innerText='Bạn chưa nhập giá trị';
+				
+				" />
+		</p>
+		
+	</form>
+
+</body>
+</html>

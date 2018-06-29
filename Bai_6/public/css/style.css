@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.web-font{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 13px;
+line-height:17px;
+}
+input[type=text], input[type=password], input[type=text], input[type=email], input[type=tel],input[type=date], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus , input[type=password]:focus , input[type=text]:focus , select:focus {
+    border: 1px solid #0000ff;
+}
+textarea
+{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.right
+{
+	text-align: right;
+}
+.left
+{
+	text-align: left;
+}
+section.chitiet
+{
+    width: 100%;
+    height: 520px;
+    margin: 0 auto;
+	position: relative;
+}
+section.chitiet .hinh
+{
+    width: 420px;
+    height: 520px;
+    margin: 0 auto;
+	float: left;
+}
+section.chitiet .hinh .hinhlon
+{
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+}
+section.chitiet .hinh .hinhlon img
+{
+    width: 420px;
+    height: 420px;
+    margin: 0 auto;
+}
+section.chitiet .hinh .hinhnho
+{
+    width: 420px;
+    height: 71px;
+    margin: 0 auto;
+	text-align: center;
+}
+section.chitiet .hinh .hinhnho img
+{
+    width: 61px;
+    height: 71px;
+    margin: 0 auto;
+}
+section.chitiet .hinh .hinhnho img:hover
+{
+    cursor: pointer;
+}
+section.chitiet .thongtin
+{
+    width: 620px;
+    height: 520px;
+    margin: 0 auto;
+	float: left;
+}	
+.price {
+    font-family: 'UTMCafeta', Arial, sans-serif;
+    font-size: 30px;
+    color: #db0000;
+    line-height: 30px;
+}
+.hinh_theo_mau {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 10px;
+}
+.hinh_theo_mau img{
+    width: 20px;   
+    background-clip: padding-box;
+}
+.hinh_theo_mau img:hover{
+    cursor: pointer;
+}

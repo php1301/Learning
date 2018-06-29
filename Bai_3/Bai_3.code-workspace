@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "CungCap_Bai3_public"
+		},
+		{
+			"path": "Demo_Bai_03"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "CungCap_Bai3_public"
+	}
+}

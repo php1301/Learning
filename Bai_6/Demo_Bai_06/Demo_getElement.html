@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Untitled Document</title>
+	<script type="text/javascript" lang="javascript">
+	function kiemtra()
+	{
+		  var chks=document.getElementsByName("ks");  //Tham chiếu danh sách điều khiển có name là ks
+		  for (i=0; i< chks.length ;i++)  //duyệt các đk, length trả về tổng số điều khiển
+		  {	
+		  	if (chks[i].checked==true)  //nếu được chọn
+			{	
+				alert("Khách sạn " + chks[i].value +" sao được chọn");
+				break;
+			}
+		  } 
+	}
+	function Xuat()
+	{
+		//var s = "Chào bạn " + txtHoten.value;   //không dùng được trên IE
+		
+		var dk = document.getElementById("txtHoten"); //tham chiếu 1 điều khiển trên tài liệu HTML
+		var s = "Chào bạn " + dk.value;   //truy xuất thuộc tính value
+		cauChao.innerHTML = s;
+	}
+	</script>
+</head>
+<body>
+	<h2 id="cauChao">[]</h2>
+	<form id ="nhap">
+		<p> <h2>demo getElementById</h2>
+			<input type="text" id="txtHoten" value="Phạm Thiên Thanh" />
+			<input type="button" value="Xuất câu chào" onclick="Xuat()"/>
+		</p>
+        <p>Chọn tiêu chuẩn khách sạn
+			<input type="radio" id="mot" name="ks" value="1">*             
+			<input type="radio" id="hai" name="ks" value="2">** 
+			<input type="radio" id="ba" name="ks" checked value="3">***
+			<input type="radio" id="bon" name="ks" value="4">****
+			<input type="radio" id="nam" name="ks" value="5">*****
+			
+			<input type="button" value="Test" onclick="kiemtra()"/>
+		</p>
+	   	
+	</form>
+
+</body> 
+</html>

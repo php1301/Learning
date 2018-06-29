@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_CauTrucdieukhien</title>
+		<script lang="JavaScript">
+			function tinhThu(so)
+			{
+				so = Number(so);  //chuyển sang kiểu số
+				var thu ="";
+				switch (so)
+				{
+					case 0:
+						thu="Chủ nhật";						
+						break;
+					case 1:
+						thu="Thứ Hai";						
+						break;
+					case 2:
+						thu="Thứ Ba";						
+						break;
+					case 3:
+						thu="Thứ Tư";						
+						break;
+					case 4:
+						thu="Thứ Năm";						
+						break;
+					case 5:
+						thu="Thứ Sáu";						
+						break;
+					case 6:
+						thu="Thứ bảy";						
+						break;
+					default:
+						thu="Thứ nhập không hợp lệ";						
+						break;
+				}
+				return thu;	//trả về giá trị
+			}
+			function InCuuChuong(so)
+			{
+				var i;
+				var kq="";
+				so = Number(so);
+				for(i=1; i<=10; i++)
+				{	
+					kq += so + " * " + i + " = " + so*i + "<br />";
+				}
+				return kq;
+			}
+			/* kết luận: 
+			 * - vòng lặp for xác định số lần lặp 
+			 */
+			function InCuuChuong2(so)
+			{
+				var i=1;
+				var kq="";
+				so = Number(so);
+				while (i<=10)   //biểu thức điều kiện
+				{
+					kq += so +" * " + i + " = " + so*i + "<br />";
+					i++;   //Phải tồn tại ít nhất 1 dòng lệnh làm thay đổi biểu thức điều kiện ==> để vòng lặp có đường thoát
+				}
+				return kq;
+			}
+			function Tinh_tong_le()
+			{
+				var i=1;
+				var tong = 0;
+				do{
+					if (i%2 !=0 )
+					{	
+						tong += i;
+					}
+					i++;
+				}while(i<=10);
+				
+				return tong;
+			}
+			//tìm số lớn nhất chia hết cho n nằm trong khoảng từ 1 -> 100
+			function Tim_so_lon_nhat(so)
+			{
+				var n = Number(so);
+				max = 1;
+				for(i=100; i>=1; i--)
+				{
+					if(i%n==0)
+					{
+						max = i;
+						break;
+					}
+				}
+				return max;
+			}
+			//Tính tổng các số chẳn từ 1 đến 10
+			function Tong_so_chan()
+			{
+				tong = 0;;
+				for(i=1; i<=10; i++)
+				{
+					if(i%2 !=0)  //số lẻ
+					{
+						continue;  //quay lên đầu vòng lặp, bỏ qua các lệnh đứng sau nó
+					}
+					tong += i;
+				}
+				return tong;
+			}
+		</script>
+	</head>
+
+<body>
+	<div id="xuat" style="color:#FF0066">Chào bạn</div>
+	<form>
+		Nhập một số: <input type="text" id="txtSo" size="30" value="0" />
+		<p>
+			<input type="button" name="mo" value="Xuất thứ" onclick="xuat.innerHTML=tinhThu(txtSo.value); " />
+		</p>
+		<p> 
+			Bài toán hiển thị kết quả xử lý 
+			<input type="button" name="mo" value="Xuất bản cửu chương" onclick="xuat.innerHTML=InCuuChuong2(txtSo.value) " />
+			<input type="button" name="mo" value="Demo do... while" onclick="xuat.innerHTML=Tinh_tong_le() " />
+		</p>
+
+		<p>
+			<input type="button" name="mo" value="Demo Break" onclick="xuat.innerHTML=Tim_so_lon_nhat(txtSo.value) " />
+			<input type="button" name="mo" value="Demo Continue" onclick="xuat.innerHTML=Tong_so_chan() " />
+		</p>
+	</form>
+</body>
+</html>

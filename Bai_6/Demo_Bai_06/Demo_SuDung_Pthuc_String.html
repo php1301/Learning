@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_SuDung_Pthuc_String</title>
+		<script type="text/javascript">
+			function PhanTich(hoten)
+			{
+				//xử lý
+				hoten = hoten.trim();   //cắt bỏ khoảng trắng 2 đầu
+				var vt1 = hoten.indexOf(' ');   //tìm khoảng trắng đầu tiên
+				var vt2 = hoten.lastIndexOf(' ');  //tìm khoảng trắng cuối cùng  
+				var ho = hoten.substr(0, vt1); 
+				var ten = hoten.substr(vt2, hoten.length-vt2);
+				var lot = hoten.substr(vt1, vt2-vt1);
+				//xuất
+				xuatHo.innerHTML = ho;
+				xuatLot.innerHTML = lot;
+				xuatTen.innerHTML = ten;  
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<p>Nhập vào Họ tên đầy đủ:
+				<input type="text" id="txtHoten" value="Phạm Ngọc Thiên Thanh" style="width: 200px" />
+			</p>
+			<p><input type="button" id="btnXuat" value="Phân tích" 
+				onclick="PhanTich(txtHoten.value);" />
+			</p>
+		</form>
+		<p id="xuatHo"> </p>
+		<p id="xuatLot"> </p>
+		<p id="xuatTen"> </p>
+	</body>
+</html>
+

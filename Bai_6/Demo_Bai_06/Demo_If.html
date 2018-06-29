@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Demo_If</title>
+	<script type="text/javascript" lang="JavaScript">
+		function Ketqua(diemTB)   //cú pháp 1: kiểm tra khi đ.kiện đúng
+		{
+			diemTB = Number(diemTB);
+			if (diemTB >= 5 )  
+			{
+				xuat.innerHTML = "Được lên lớp";
+			}		
+		}
+		function Ketqua2(diemTB)
+		{
+			diemTB = Number(diemTB);
+			if (diemTB >= 5 )
+			{
+				xuat.innerHTML = "Được lên lớp";
+			}		
+			else
+				xuat.innerHTML = "Ở lại lớp";
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id="xuat" style="color:#FF0066">Chào bạn</div>
+		<form>
+			Nhập điểm trung bình: <input type="text" id="txtDTB" size="30" value="0" />
+			<p>
+				<input type="button" name="mo" value="Xuất kết quả" onclick="Ketqua2(txtDTB.value);" />
+			</p>
+
+		</form>
+		
+</body>
+</html>

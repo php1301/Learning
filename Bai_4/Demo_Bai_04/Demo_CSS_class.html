@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Demo Class CSS</title>
+		<!-- internal CSS -->
+		<style type="text/css" >
+			/*class: dùng cho tất cả các tag*/
+			.tieude {
+				background-color: #f6900c;  /* cam*/
+				color:#FFFFFF			/* trắng*/
+			}
+			.chudo{
+				color: red; background-color: blue;
+			}
+			.mauvang{
+				background-color: #ffff00; font-style: italic
+			}
+
+			/*class: dùng cho  tag p có khai báo class */
+			p.tieude2 {
+				background-color: #8C0209;
+				color:#FFFFFF
+			}
+			
+		
+		</style>
+	</head>
+	<body >
+		<div>
+			tag div KHÔNG dùng class tieude
+		</div>
+		<!-- class: dùng cho tất cả các tag -->
+		<div class="tieude">
+			tag div dùng class tieude
+		</div>
+		
+		<h1 class="tieude">tag h1 dùng class tieude</h1>
+		
+		<p class="tieude">tag p dùng class tieude</p>
+		
+		<!-- class: dùng cho tag  cụ thể-->
+		<p>tag p KHÔNG dùng class tieude2</p>
+		
+		<p class="tieude2">tag p dùng class tieude2</p>
+		
+		<h1 class="tieude2">tag h1 dùng class tieude2 ==> No OK vì phần khai báo chỉ dùng cho tag p</h1>
+		
+		<!-- kết hợp các class với nhau -->
+		<p class="mauvang chudo">
+			Sử dụng các class kết hợp với nhau, style cũng bị ảnh hưởng theo vị trí của nó
+		</p>
+		
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sự kiện </title>
+
+</head>
+	
+<body>
+	<h2> Demo sự kiện</h2>
+	<div id="xuat">[xuất]</div>
+	
+	<form>
+		<!-- từ khóa this: chính là element hiện hành -->
+		<p>Nhâp họ tên: <input type="text" id="txtHoten" value=""  onchange="xuat.innerHTML=this.value;"/> </p>
+		<select id="nghe2" size="7" multiple  style="width: 150px" onchange="alert(this.value)" >  <!-- dạng ListBox -->
+			<option value="1" >Kỹ sư</option>
+			<option value="2" selected >Bác sĩ</option>
+			<option value="3" >Giáo viên</option>
+			<option value="4" >Bộ đội</option>
+			<option value="5" >Lập trình viên</option>
+			<option value="6" >Lập trình viên</option>
+			<option value="7" >Lập trình viên</option>
+			<option value="8" >Lập trình viên</option>
+			<option value="9" >Lập trình viên</option>
+		</select>
+		<p><input type="button"  value="Thực hiện client" /></p>
+		
+		<p>Nhâp địa chỉ: <input type="text" id="txtDiachi" value=""  onselect="alert('bạn đang chọn nội dung')"/> </p>
+		<p>Nhâp lý lịch: <input type="text" id="txtLylich" value="" onblur="this.value='Đã mất con trỏ'" /> </p>
+		<p>Nhâp Số nhà: <input type="text" id="txtSoNha" value=""   onfocus="this.value = 'Đã nhận được con trỏ';" /> </p>
+	</form>
+	
+	<form onsubmit="alert('Gởi tên server');" style="border: 1px solid red">
+	
+		<p>Nhâp họ tên: <input type="text" id="txtHoten2" value=""  onchange="xuat.innerHTML=this.value;"/> </p>
+		
+		<p><input type="submit"  value="Thực hiện" /></p>
+		<p><input type="button"  value="Thực hiện client" /></p>
+	</form>
+</body> 
+</html>

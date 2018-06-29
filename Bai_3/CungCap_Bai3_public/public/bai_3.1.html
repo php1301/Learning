@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 0.9em;
+        }
+        
+        .container {
+            width: auto;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        header,
+        footer {
+            padding: 10px;
+            color: white;
+            background-color: #183544;
+        }
+        
+        section {
+            margin: 0px 0px 0px 0px;
+            padding: 10px;
+        }
+        
+        article {
+            background-color: white;
+        }
+        
+        nav ul {
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 5px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+        
+        nav li {
+            float: left;
+        }
+        
+        nav li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        nav li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+        
+        li a.active {
+            color: white;
+            background-color: #4CAF50;
+        }
+        
+        figure {
+            float: left;
+            width: 24%;
+            padding: 0;
+            margin: 5px;
+            border: none;
+        }
+        
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tạo header -->
+    <header>
+        <img src="/images/logo.png" height="100px" style="float: left; margin-right: 200px" />
+        <img src="/images/01-ID-Nike-BP-header.jpg" height="100px" />
+    </header>
+    <!-- Tạo menu -->
+    <nav>
+        <ul>
+            <li>
+                <a href="#" class="active">Trang chủ</a>
+            </li>
+            <li>
+                <a href="#">Nam</a>
+            </li>
+            <li>
+                <a href="#">Nữ</a>
+            </li>
+            <li>
+                <a href="#">Con trai</a>
+            </li>
+            <li>
+                <a href="#">Con gái</a>
+            </li>
+            <li>
+                <a href="#">Giảm giá</a>
+            </li>
+            <li>
+                <a href="#">Liên hệ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sản phẩm giảm giá -->
+    <section class="container">
+        <h1 align="center">SẢN PHẨM GIẢM GIÁ</h1>
+        <figure style="text-align: center">
+            <img src="images/03-ID-Nike-BP-womens-shoes.jpg" class="image" />
+            <figcaption>
+                Giày nữ
+            </figcaption>
+        </figure>
+        <figure style="text-align: center">
+            <img src="images/04-ID-Nike-BP-mens-clothing.jpg" class="image" />
+            <figcaption>
+                Quần áo nam
+            </figcaption>
+        </figure>
+        <figure style="text-align: center">
+            <img src="images/05-ID-Nike-BP-mens-shoes.jpg" class="image" />
+            <figcaption>
+                Giày nam
+            </figcaption>
+        </figure>
+        <figure style="text-align: center">
+            <img src="images/600x400-Nike.jpg" class="image" />
+            <figcaption>
+                Túi thể thao
+            </figcaption>
+        </figure>
+    </section>
+    <div style="clear: both; width: 100%"> </div>
+
+    <!-- Sản phẩm mới -->
+    <section class="container">
+        <div style="width: 560px; float: left; margin-right: 35px">
+            <h1 align="center">SẢN PHẨM MỚI</h1>
+            <video width="560px" height="315" controls>
+                <source src="video/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="width: 560px; float: left">
+            <h1 align="center">LIÊN HỆ</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.52444520074!2d106.6822571!3d10.762887!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1cc90b59bd91e938!2zVHJ1bmcgVMOibSBUaW4gSOG7jWMgLSDEkEggS2hvYSBI4buNYyBU4buxIE5oacOqbg!5e0!3m2!1svi!2s!4v1502781094053"
+                width="850px" height="315" frameborder="0" style="border:0" allowfullscreen> </iframe>
+        </div>
+    </section>
+
+    <div style="clear: both; width: 100%"> </div>
+    <footer>
+        <p>
+        </p>
+    </footer>
+
+</body>
+
+</html>

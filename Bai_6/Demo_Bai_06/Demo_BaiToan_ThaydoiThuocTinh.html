@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_CauTrucdieukhien</title>
+		<script lang="JavaScript">
+			function hoverDiv()
+			{
+				xuat2.style.color= "blue";
+				xuat2.style.fontSize = "30px";  //Lưu ý thuộc tính có 2 từ
+				xuat2.style.fontStyle = "italic";  //Lưu ý thuộc tính có 2 từ
+			}
+			function outDiv()
+			{
+				xuat2.style.color= "#FF0066";
+				xuat2.style.fontSize = "14px";  //Lưu ý thuộc tính có 2 từ
+				xuat2.style.fontStyle = "normal";  //Lưu ý thuộc tính có 2 từ
+			}
+		</script>
+		<style>
+			.vao {
+				color: #009933; 
+				font-weight: bold; 
+				font-size: 24px
+			}
+			.ra{
+				color:#FF0066; font-weight: normal; font-size: 16px
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div id="xuat" style="color:#FF0066" onmouseover="this.style.color='#8C0929';  "
+					 onmouseout="xuat.style.color='#FF0066';">Chào bạn, kết thúc bài 6 tại đây</div>
+		<br /><br /><br /><br /><br />
+				
+		<div id="xuat2" style="color:#FF0066" onmouseover="hoverDiv()" onmouseout="outDiv()">Chào bạn, kết thúc bài 6 tại đây</div>
+		<br /><br /><br /><br /><br />
+		
+		<div id="xuat3" onmouseover="this.className='vao';" onmouseout="this.className='ra';">Chào bạn, kết thúc bài 6 tại đây</div>
+		<br /><br />
+		<img src="../images/Hinh01.jpg" onmouseover="this.src='../images/Hinh02.jpg';" onmouseout="this.src='../images/Hinh01.jpg';" />
+		
+	</body>
+</html>

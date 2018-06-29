@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Demo BOM</title>
+<script lang="javascript">
+	//Mở một cửa số trắng
+	function mocuaso()
+	{ 
+		var myWindow=window.open('','','width=500,height=500,left=200px,top=100px,resizable=no,toolbar=no, menubar=no,location=no');
+		myWindow.document.write("Đây là 'myWindow'");		//ghi văn bản xuống trang web
+		myWindow.focus();	//kích hoạt cửa sổ
+	}
+	function mocuaso2()
+	{ 
+		var myWindow = open('http://vnexpress.net');  //được phép bỏ qua window
+		myWindow.focus();	//active cửa sổ
+	}
+</script>
+</head>
+<body onload="mocuaso();">   <!-- onload xảy ra khi chúng ta mở trang web--> 
+	<span id ="xuat" style="color:#F00; font-weight:bold"> </span>
+	<form id="nhap">
+		<input type="button" value="Mở một cửa sổ trắng" onclick="mocuaso();">
+		<input type="button" value="Mở một cửa sổ tham chiếu đến URL" onclick="mocuaso2();">
+	</form>
+</body>
+</html>

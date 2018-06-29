@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_CSS_Pseudo_class</title>
+		
+		<style  type="text/css">
+			a:link     /* định dạng mặc định cho liên kết*/ 
+			{ 
+				color:#990099; 
+				text-decoration: none;
+			}
+			a:visited   /* định dạng đã kích hoạt liên kết */
+			{
+				 color: red;
+			}
+			a:hover     /* định dạng khi rê chuột lên */
+			{
+				color: green; 
+			}
+			a:active    /* định dạng đang kích hoạt liên kết ==> nhấn và giữ chuột */
+			{
+				color:#F6900C;
+				font-weight: bold;
+			}
+		</style>
+	    <!-- Lưu ý: Vị trí các style phải theo trình tự như trên -->
+	</head>
+
+	<body>
+		<a href="http://vnexpress.net"> Trang tin nhanh</a> <br/>
+		<a href="http://t3h.vn"> Trang Trung tâm tin học</a> <br/>
+		<a href="http://thanhnien.com.vn"> Trang thanh niên</a>
+	</body>
+</html>

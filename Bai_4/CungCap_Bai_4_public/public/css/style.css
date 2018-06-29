@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*Phần cung cấp cho học viên*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: blueviolet;
+}
+
+nav {
+    background-color: wheat;
+}
+
+nav ul li {
+    border: none;
+    list-style: none;
+}
+
+nav li a:hover:not (.active) {
+    background-color: aqua
+}
+
+li a.active {
+    background-color: aqua
+}
+
+nav li {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+nav li a {
+    display: block;
+    border: 1px solid red;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+div.anh {
+    float: left;
+    margin: 5px;
+    border: 1px solid;
+    width: 280px;
+    background-color: wheat;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+section {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+div.anh:hover {
+    border: 1px solid wheat;
+}
+
+div.anh img {
+    width: 100%;
+}
+
+div.bottom {
+    padding: 10px;
+    text-align: center;
+}
+
+a.nut1:link,
+a.nut1:visited {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.nut1:hover {
+    background-color: red
+}
+
+a.nut2:visited,
+a.nut2:link {
+    background-color: greenyellow;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.nut2:hover {
+    background-color: red;
+}
+
+
+/* End Phần cung cấp cho học viên*/
+
+
+/*Bài 4.1*/
+
+
+/*Bài 4.2*/
+
+
+/* Bài 4.3*/
+
+
+/* Bài 4.4 */

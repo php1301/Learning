@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Ví dụ về script</title>
+	<script lang="JavaScript">
+		document.write('JavaScript đặt trong tag head ');   //In dòng văn bản ra màn hình
+	</script>
+</head>
+<body>
+	<h1>Đây là ví dụ minh họa về vị trí thi hành của JavaScript</h1>
+	
+	<script lang="javascript">
+		document.write('JavaScript đặt trong tag body, trước dòng văn bản ');
+		//xuat.innerText = "Chào các bạn, chúc mừng các bạn đến với Javascript";  // No Ok ví chưa hiểu element xuat
+	</script>
+
+	<h2 style="color: red">Đây là dòng văn bản của trang web</h2>
+	<h3 id="xuat" style="color: blue">[Xuất câu chào]</h3>
+
+	<script lang="javascript">
+		document.write('JavaScript đặt trong tag body, sau dòng văn bản ');
+		xuat.innerText = "Chào các bạn, chúc mừng các bạn đến với Javascript";
+	</script>
+	<br/>
+	<script lang="JavaScript" src="Thuvien.js"></script>
+	
+</body>
+</html>

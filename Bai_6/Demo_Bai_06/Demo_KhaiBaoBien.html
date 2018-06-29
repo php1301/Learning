@@ -1,0 +1,31 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script lang="javascript">
+		var bien = "Trung Tam Tin Hoc";		//biến toàn cục
+
+		function doi_gia_tri()
+		{	
+			var n = 8; 				//biến cục bộ
+			//bien = "T3H";    //biến toàn cục
+			var bien = "T3H";  		//biến cục bộ
+		}
+		function XemGiatri()
+		{
+			//biến chưa xác định gái trị
+			var b1 = null;
+			var b2;
+			alert("b1 = " + b1 + ", b2 = " + b2);
+		}
+	</script>
+   
+</head> 
+<body> 
+	<form id="nhap">
+		<p><input type="button" name="doi" value="1. Đổi giá trị biến"	onclick="doi_gia_tri();" > </p>
+		<p><input type="button" name="xem" value="2. Xem giá trị biến" 	onclick="alert(bien)" > </p>
+		
+		<p><input type="button" name="xem" value="3. Xem giá trị không xác định" onclick="XemGiatri()" > </p>
+	</form>
+</body>
+</html>

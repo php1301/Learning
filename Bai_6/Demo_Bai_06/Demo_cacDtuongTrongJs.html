@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_cacDtuongTrongJs</title>
+		<script>
+			function dungSearch(giatri)
+			{
+				var chuoi = new String("Chữ Tâm kia mới bằng ba chữ Tài");
+				//var vt = chuoi.search(/tâm/i);
+				
+				var vt = chuoi.search(eval("/" + giatri + "/i"));	
+				if (vt ==-1)
+					Xuat.innerText ="Không tìm thấy";
+				else
+					Xuat.innerText ="Tìm thấy ở vị trí thứ " + vt;
+			}
+			function dungReplace()
+			{
+				var chuoi =new String("Mẹ là làn gió mát, đưa con giấc ngủ ngoan; Mẹ là dòng suối trong, cho con luôn tìm về");
+				str = chuoi.replace(/mẹ/gi,"Má");
+				Xuat.innerText = str; 
+			}
+			function dungDate()
+			{
+				//var ngaysinh = new Date(2018,4,25);  //hoặc
+				var ngaysinh = new Date();   //ngày hiện hành của máy
+				//thiết lập giá trị : set
+				 ngaysinh.setDate(25);
+				 ngaysinh.setMonth(4);
+				 ngaysinh.setFullYear(2018);
+				
+				thu = ngaysinh.getDay();
+				var chuoi = "Bạn sinh vào: " + tinhThu(thu) +", ngày " + ngaysinh.getDate() + "/" + (ngaysinh.getMonth()+1) + "/" + ngaysinh.getFullYear();
+				
+				alert(chuoi);	
+			}
+			function tinhThu(so)
+			{
+				so = Number(so);
+				var thu ="";
+				switch (so)
+				{
+					case 0:
+						thu="Chủ nhật";						
+						break;
+					case 1:
+						thu="Thứ Hai";						
+						break;
+					case 2:
+						thu="Thứ Ba";						
+						break;
+					case 3:
+						thu="Thứ Tư";						
+						break;
+					case 4:
+						thu="Thứ Năm";						
+						break;
+					case 5:
+						thu="Thứ Sáu";						
+						break;
+					default:
+						thu="Thứ Bảy";						
+						break;
+						
+				}
+				return thu;
+			}
+		</script>
+	</head>
+
+<body>
+	<div id="Xuat" style="color:#FF0066">[Xuất]</div>
+		<form id="nhap">
+			Nhập một chuỗi: <input type="text" id="txtChuoi" size="30" >
+			<p>
+				<input type="button" name="mo" value="Tìm bằng search"	onclick="dungSearch(txtChuoi.value);" >
+				<input type="button" id="btn2" value="Tìm và thay thế" onclick="dungReplace(); " >
+				<input type="button" id="btn3" value="Dùng Date" onclick="dungDate(); " >
+			</p>	
+		</form>
+</body>
+</html>
+

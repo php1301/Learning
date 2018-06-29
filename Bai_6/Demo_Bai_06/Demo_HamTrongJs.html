@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>HamTrongJs</title>
+		<script lang="JavaScript">
+			function Test_val()
+			{
+				str="if (3>2) document.write('đúng'); else 	document.write('sai');"; 
+				var ktra = eval(str);					// “đúng”
+				document.write("<br>" + eval("2+2"));	// 4
+			}
+			function Test_isNaN()
+			{
+				document.write(isNaN(5-2)+ "<br />");		// false
+				document.write(isNaN(0)+ "<br />");		//false
+				document.write(isNaN("Hello")+ "<br />");	//true 
+
+			}
+			function Test_Number()
+			{
+				document.write(Number("227") + "<br>");	// 227
+				document.write(Number(true)  + "<br>");// 1
+				document.write(Number(false) + "<br>");// 0
+				document.write(Number("227 233"));	// NaN
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<form id="nhap">
+			<input type="button" name="mo" value="Demo hàm eval()" onclick="Test_val();" >
+			<input type="button" name="mo" value="Demo hàm isNaN"  onclick="Test_isNaN();" >
+			<input type="button" name="mo" value="Demo hàm Number" onclick="Test_Number();" >
+		</form>
+
+	</body>
+</html>

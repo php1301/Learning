@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script lang="javascript">
+		//1. Hàm không trả về giá trị
+		function thongbao(cauthongbao)
+		{
+			alert(cauthongbao);			
+		}
+		//2.Hàm trả về giá trị ==> phải có dòng return cuối cùng
+		function XuatCauchao(hoten)
+		{
+			var kq = "Hello, bạn <b>" + hoten + "</b>";
+			return kq;			
+		}
+
+		//gán giá trị trực tiếp trong hàm
+		function XuatCauchao2(hoten)
+		{
+			cauchao.innerHTML = "Hello, bạn <b>" + hoten + "</b>";
+		}
+		function XuatCauchao3()
+		{
+			 var hoten = document.getElementById("txtHoten");  //tham chiếu đến txtHoten, dùng DOM
+			 cauchao.innerHTML = "Hello, bạn <b>" + hoten.value + "</b>";			
+			
+			// var hoten = txtHoten.value;    //lấy giá trị trực tiếp
+			// cauchao.innerHTML = "Hello, bạn <b>" + hoten + "</b>";   //gán giá trị trực tiếp
+		}		
+	</script>
+	</head> 
+<body> 
+
+	<div id="cauchao" style="color: red;">[Xuất câu chào]</div>
+
+	<form id="nhap">
+		
+		<p>Nhập họ tên : <input type="text" id="txtHoten" value="Phạm Thiên Thanh"/></p>
+		<p><input type="button" id="btn1" value="Gọi hàm không trả về giá trị"	onclick="thongbao(txtHoten.value);" > </p>
+			
+		<!-- Thuộc tính innerText chỉ nhận nội dung chuỗi văn bản -->
+		<p><input type="button" id="btn2" value="Gọi hàm trả về giá trị"
+			onclick="cauchao.innerText = XuatCauchao(txtHoten.value);" />
+		</p>  
+			
+		<!-- Thuộc tính innerHTML nhận nội dung chuỗi văn bản kể cả tag html-->
+		<p><input type="button" id="btn3" value="Gọi hàm trả về giá trị"
+			onclick="cauchao.innerHTML = XuatCauchao(txtHoten.value)" />
+		</p>
+		<p><input type="button" id="btn4" value="Gọi hàm KHÔNG trả về giá trị, xuất trực tiếp"
+			onclick="XuatCauchao2(txtHoten.value)" />
+		</p>	
+		<input type="button" id="btn5" value="Gọi hàm KHÔNG trả về giá trị, truy xuất và gán trực tiếp"
+			onclick="XuatCauchao3()" />		
+	</form>
+	
+</body>
+</html>
