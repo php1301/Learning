@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sử dụng Collaspe với panel và nhóm</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		 <h2>Sử dụng Collaspe với panel và nhóm, dạng Accordion</h2>
+		 <p><u>Lưu ý:</u> Sử dụng liệu thuộc tính <b>data-parent</b> để đảm bảo tất cả các tag được collapse
+		 	theo tag cha sẽ bị đóng khi một trong các tag đó được hiển thị.</p>
+		<div class="panel-group" id="accordion">
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#bunmam">  <!-- Nếu là tag khác thì dùng data-target thề href -->
+		        Bún mắm</a>
+		      </h4>
+		    </div> 
+		    <div id="bunmam" class="panel-collapse collapse in">
+			    <div class="panel-body"> Bún mắm vốn có nguồn gốc từ Campuchia, được nấu từ mắm bò hóc. Khi sang đến Việt Nam thường
+					 được nấu bằng mắm cá linh hay cá sặc, đây là các loại cá có nhiều tại miền Tây, các tỉnh
+					 Trà Vinh và Sóc Trăng.
+					Trước đây, bún mắm là một món ăn dân dã và được chế biến giản dị, nó thường được dùng cho những
+					 bữa ăn nhanh. Con mắm được nấu rã ra, sau đó lọc lấy phần nước trong, cho thên một ít đường, 
+					 hành sả và dùng chung với bún. Về sau để tăng hương vị và độ phong phú cho bún mắm, người ta 
+					 cho thêm miếng cá, tôm, mực và heo quay. Hiện nay, bún mắm đang làm một trong những món đặc sản 
+					 ngon của miền Tây Nam Bộ. Cách làm bún mắm chị em có thể tham khảo tại đây.
+				</div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#bunnuocleo">
+		        Bún nước lèo</a>
+		      </h4>
+		    </div>
+		    <div id="bunnuocleo" class="panel-collapse collapse">
+		      <div class="panel-body">Nét đặc biệt của nước lèo Sóc Trăng là không lợn cợn mà trong veo bởi nó được nấu bằng một công 
+		 	thức khá lạ. Cách nấu bún nước lèo không khó, món ngon chính vị mằn mặn thơm phức của mắm bồ hóc,
+		 	ngọt dai của tôm tươi, thêm vài miếng cá lóc phi lê mềm tan, mùi thơm đặc trưng của ngải bún
+		 	hòa quyện trong bát nước lèo trong veo, làm nên chất quê của bún nước lèo Sóc Trăng..</div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" href="#hutieu">
+		        Hủ tiếu Nam vang</a>
+		      </h4>
+		    </div>
+		    <div id="hutieu" class="panel-collapse collapse">
+		      <div class="panel-body">	Hủ tiếu Nam vang có vị ngọt của xương, của tôm, vị đậm đà của thịt bằm không chỉ ngon mà 
+		 	còn thu hút người ăn bởi màu nâu sẫm của gan, trắng của trứng cút, đỏ của tôm và sắc xanh 
+		 	của cần tây, lá hẹ. Từng sợi hủ tiếu mềm dai kết hợp với nước dùng thanh ngọt, vị béo của
+		 	 gan, ngọt của tôm, bùi bùi của trứng, quyện thêm mùi thơm của tỏi phi vàng rộm sẽ cuốn 
+		 	 hút các thành viên trong gia đình bạn</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sử dụng Scrollspy</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style type="text/css" rel="stylesheet">
+		body {
+		      position: relative; /*Phải có khai báo này*/
+		     margin-top: 50px;  
+		  }
+		  h1{
+		  	margin-top: 50px;
+		  }
+	</style> 
+</head>
+
+<!-- Vùng có thể trượt  -->
+<body data-spy="scroll" data-target="#thanhdieuhuong" data-offset="50">
+	<!-- data-target khai báo đến id hoặc class của thanh điều hướng-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="thanhdieuhuong">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">Nhà hàng Dân dã</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="#section1">Bún mắm</a></li>    <!-- Trỏ đến bookmark section1 đã được khai báo -->
+	          <li><a href="#section2">Bún nước lèo</a></li>
+	          <li><a href="#section3">Bánh xèo</a></li>
+	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Hủ tiếu<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">Hủ tiếu Nam vang</a></li>
+	              <li><a href="#section42">Hủ tiếu Mỹ tho</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>    
+
+		<div id="section1" class="container-fluid">
+		  <h1>Bún mắm</h1>
+		  <p>Bún mắm vốn có nguồn gốc từ Campuchia, được nấu từ mắm bò hóc. Khi sang đến Việt Nam thường được nấu bằng mắm cá linh hay cá sặc, đây là các loại cá có nhiều tại miền Tây, các tỉnh Trà Vinh và Sóc Trăng.
+			Trước đây, bún mắm là một món ăn dân dã và được chế biến giản dị, nó thường được dùng cho những bữa ăn nhanh. Con mắm được nấu rã ra, sau đó lọc lấy phần nước trong, cho thên một ít đường, hành sả và dùng chung với bún. Về sau để tăng hương vị và độ phong phú cho bún mắm, người ta cho thêm miếng cá, tôm, mực và heo quay. Hiện nay, bún mắm đang làm một trong những món đặc sản ngon của miền Tây Nam Bộ. Cách làm bún mắm chị em có thể tham khảo tại đây.</p>
+		  <p>Nguyên liệu: (khẩu phần cho 4 người ăn)<pre>
+			- 150g mắm cá linh
+			- 200g tôm tươi
+			- 200g thịt heo quay
+			- 1 con mực ống
+			- 300g phi lê cá lóc
+			- 300g sườn già
+			- 50g sả băm
+			- 2 cây sả
+			- 1 quả cà tím
+			- 1 trái ớt sừng
+			- Gia vị: 60g đường; 50g bột nêm; 5ml dầu ăn.
+			- 1kg bún </pre>
+			</p>
+		</div>
+		<div id="section2" class="container-fluid">
+		  <h1>Bún nước lèo</h1>
+		  <p>Nét đặc biệt của nước lèo Sóc Trăng là không lợn cợn mà trong veo bởi nó được nấu bằng một công thức khá lạ. Cách nấu bún nước lèo không khó, món ngon chính vị mằn mặn thơm phức của mắm bồ hóc, ngọt dai của tôm tươi, thêm vài miếng cá lóc phi lê mềm tan, mùi thơm đặc trưng của ngải bún hòa quyện trong bát nước lèo trong veo, làm nên chất quê của bún nước lèo Sóc Trăng.</p>
+		  <p><b>Nguyên Liệu:</b>
+		  	<pre>
+				o Mắm sặc ngon: 500g
+				o Tép bạc đất : 500g
+				o Cá lóc : 700g / 1 con
+				o Thịt heo quay: 200g
+				o Ngải bún: 200g, đập dập
+				o Sả: 5 cây, đập dập
+				o Dừa xiêm: 2 trái
+				o Hẹ: 100g
+				o Giá: 200g
+				o Rau ghém: rau sống, bắp chuối, rau muống…
+				o Chanh, ớt
+				o Muối, đường
+				o Bún
+		  	</pre>
+		  </p>
+		</div>
+		<div id="section3" class="container-fluid">
+		  <h1>Bánh xèo</h1>
+		  <p>Bánh xèo là một trong những món ăn nổi tiếng của Việt Nam, được người dân Việt Nam cũng như bạn bè quốc tế yêu thích. Tuy nhiên cách làm bánh xèo lại tương đối đơn giản với những nguyên liệu dễ tìm. Cùng học cách làm món bánh xèo giòn rụm, thơm ngon nhé!</p>
+		  <p><h3>Cách làm bánh xèo vừa giòn vừa ngon</h3>
+		  	<h4>Nguyên liệu làm bánh xèo</h4>
+		  	<pre>
+<b>Nước chấm:</b>
+– 3 thìa nước mắm
+– 1/2 thìa nước sôi
+– 1 thìa đường
+– 1/2 thìa bột ngọt
+– 2 trái ớt băm nhuyễn
+– 1 thìa tỏi
+– 1 thìa nước cốt chanh
+<b>Vỏ bánh xèo:</b>
+– 200g bột gạo
+– 250ml nước
+– 100ml bia
+– 50ml nước cốt dừa
+– ½ thìa café muối
+– 1/2 thìa café bột nghệ
+– Hành lá, dầu ăn
+<b>Nhân bánh xèo:</b>
+– 200g thịt bò
+– 200g tôm
+– 1 củ hành tây
+– 100g giá đỗ
+– Gừng, hành khô, tiêu, gia vị
+– Rau sống, xà lách,…
+		  	</pre>
+		  </p>
+		</div>
+		<div id="section41" class="container-fluid">
+		  <h1>Hủ tiếu Nam vang</h1>
+		  <p>Hủ tiếu Nam vang có vị ngọt của xương, của tôm, vị đậm đà của thịt bằm không chỉ ngon mà còn thu hút người ăn bởi màu nâu sẫm của gan, trắng của trứng cút, đỏ của tôm và sắc xanh của cần tây, lá hẹ. Từng sợi hủ tiếu mềm dai kết hợp với nước dùng thanh ngọt, vị béo của gan, ngọt của tôm, bùi bùi của trứng, quyện thêm mùi thơm của tỏi phi vàng rộm sẽ cuốn hút các thành viên trong gia đình bạn.
+			</p>
+		  <p>
+		  	<h4>Với cách nấu hủ tiếu Nam Vang này bạn cần chuẩn bị những nguyên liệu sau:</h4>
+		  	<pre>
+- Xương ống: 500gr
+- Thịt xay: 100gr
+- Tôm sú: 200gr
+- Gan, lòng heo: 200gr
+- Trứng cút: 6 quả
+- Hủ tiếu khô, cần tây, cải cúc, hẹ, hành tây, cà rốt, tỏi	
+		  	</pre>
+		  </p>
+		</div>
+		<div id="section42" class="container-fluid">
+		  <h1>Hủ tiếu Mỹ tho</h1>
+		  <p>Hủ tiếu Mỹ Tho là một trong ba thương hiệu nổi tiếng nhất của miền Nam, bên cạnh hủ tiếu Sa Đéc và Nam Vang. Nhìn sơ qua, hủ tiếu Mỹ Tho cũng na ná các món ăn cùng loại, với thành phần chính là sợi hủ tiếu, nước dùng và nguyên liệu ăn kèm. Nhưng chỉ đến khi ăn thử, bạn mới cảm nhận được sự khác biệt rất riêng của món ăn này.</p>
+		<p>Đặc điểm của sợi hủ tiếu Mỹ Tho là cọng nhỏ, khô, dai và giòn giòn thơm ngon, mang nét đặc trưng không lẫn với hủ tiếu ở một nơi nào khác. Nguyên liệu ăn kèm khá phong phú nên thực khách có thể thoải mái lựa chọn thịt nạc, lòng, xương hay hải sản... tùy theo ý thích. Ngoài hai thành phần đó, cái hấp dẫn người ăn nhất chính là nước dùng. Ngoài vị ngọt của nước hầm xương, còn có cái mằn mặn của tôm khô, ngọt nhẹ của củ cải, tạo cảm giác dìu dịu nơi đầu lưỡi khi thưởng thức.</p>
+		  <p><h4>Vật Liệu :</h4>
+		  		<pre>
+- Xương heo (xương ống thì ngon vô cùng)
+- 1lb thit xay 
+- 1/2 tôm (nếu ăn nhiều thì 1 lb)
+- 1 cái gan
+- 1 vỉ trứng cút 24 cái, nếu không có tươi thì
+   dùng 1 lon trứng cút 
+- 1 bó cần tầu nhỏ
+- 1 bó hành lá 
+- 2 trái chanh
+- 1 bó hẹ 
+- 1 bọc giá (ít nhiều tuỳ số lượng ngưòi ăn)
+- 2 muỗng canh củ cải mặn cắt nhỏ của chinese
+- 2 củ cải trắng
+- đường, nước mắm, bột ngọt, dầu lynn
+- dầu hào (hoặc xì dầu) + giấm + dầu mè
+		  		</pre>
+		  </p>
+		</div>
+
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+		<!--Ghi chú: Scrollspy thường ứng dụng cho website dạng single page -->
+
+</body>
+</html>

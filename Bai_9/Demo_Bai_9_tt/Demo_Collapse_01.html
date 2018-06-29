@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sử dụng Collaspe</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="container">
+		 <h2>Cơ bản</h2>
+		 <p>Sử dụng class <b>collapse</b>, thuộc tính <b>data-toggle="collapse"</b> và <b>data-target="#id"</b></p>
+		 <p>Nếu dùng tag a thì thay thế <b>data-target</b> bằng <b>href</b></p>
+		 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bunmam">Bún mắm</button>
+		 <div id="bunmam" class="collapse in"> <!-- thêm class "in" để mặc định hiển thị -->
+			 Bún mắm vốn có nguồn gốc từ Campuchia, được nấu từ mắm bò hóc. Khi sang đến Việt Nam thường
+			 được nấu bằng mắm cá linh hay cá sặc, đây là các loại cá có nhiều tại miền Tây, các tỉnh
+			 Trà Vinh và Sóc Trăng.
+			Trước đây, bún mắm là một món ăn dân dã và được chế biến giản dị, nó thường được dùng cho những
+			 bữa ăn nhanh. Con mắm được nấu rã ra, sau đó lọc lấy phần nước trong, cho thên một ít đường, 
+			 hành sả và dùng chung với bún. Về sau để tăng hương vị và độ phong phú cho bún mắm, người ta 
+			 cho thêm miếng cá, tôm, mực và heo quay. Hiện nay, bún mắm đang làm một trong những món đặc sản 
+			 ngon của miền Tây Nam Bộ. Cách làm bún mắm chị em có thể tham khảo tại đây.
+		 </div>
+ 		 
+ 		 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#bunnuocleo">Bún nước lèo</button>
+		 <div id="bunnuocleo" class="collapse">
+		 	Nét đặc biệt của nước lèo Sóc Trăng là không lợn cợn mà trong veo bởi nó được nấu bằng một công 
+		 	thức khá lạ. Cách nấu bún nước lèo không khó, món ngon chính vị mằn mặn thơm phức của mắm bồ hóc,
+		 	ngọt dai của tôm tươi, thêm vài miếng cá lóc phi lê mềm tan, mùi thơm đặc trưng của ngải bún
+		 	hòa quyện trong bát nước lèo trong veo, làm nên chất quê của bún nước lèo Sóc Trăng.
+		 </div>
+		 
+		 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#hutieu">Hủ tiếu Nam vang</button>
+		 <div id="hutieu" class="collapse">
+		 	Hủ tiếu Nam vang có vị ngọt của xương, của tôm, vị đậm đà của thịt bằm không chỉ ngon mà 
+		 	còn thu hút người ăn bởi màu nâu sẫm của gan, trắng của trứng cút, đỏ của tôm và sắc xanh 
+		 	của cần tây, lá hẹ. Từng sợi hủ tiếu mềm dai kết hợp với nước dùng thanh ngọt, vị béo của
+		 	 gan, ngọt của tôm, bùi bùi của trứng, quyện thêm mùi thơm của tỏi phi vàng rộm sẽ cuốn 
+		 	 hút các thành viên trong gia đình bạn
+		 </div>
+		
+		<h2>Sử dụng javascript</h2>
+		 <button type="button" class="btn btn-info" id="btnNut">Hủ tiếu Mỹ tho</button>
+		 <div id="mytho" class="collapse">
+		 	<p>Hủ tiếu Mỹ Tho là một trong ba thương hiệu nổi tiếng nhất của miền Nam, bên cạnh hủ tiếu Sa Đéc và Nam Vang. Nhìn sơ qua, hủ tiếu Mỹ Tho cũng na ná các món ăn cùng loại, với thành phần chính là sợi hủ tiếu, nước dùng và nguyên liệu ăn kèm. Nhưng chỉ đến khi ăn thử, bạn mới cảm nhận được sự khác biệt rất riêng của món ăn này.</p>
+			<p>Đặc điểm của sợi hủ tiếu Mỹ Tho là cọng nhỏ, khô, dai và giòn giòn thơm ngon, mang nét đặc trưng không lẫn với hủ tiếu ở một nơi nào khác. Nguyên liệu ăn kèm khá phong phú nên thực khách có thể thoải mái lựa chọn thịt nạc, lòng, xương hay hải sản... tùy theo ý thích. Ngoài hai thành phần đó, cái hấp dẫn người ăn nhất chính là nước dùng. Ngoài vị ngọt của nước hầm xương, còn có cái mằn mặn của tôm khô, ngọt nhẹ của củ cải, tạo cảm giác dìu dịu nơi đầu lưỡi khi thưởng thức.</p>
+		 </div>
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+		 <script type="text/javascript">
+		 	$(function(){
+		 		$("#btnNut").click(function(){
+		 			$("#mytho").collapse('toggle');
+		 		});	
+		 	}
+		 	);
+		 </script>
+	</div>
+</body>
+</html>

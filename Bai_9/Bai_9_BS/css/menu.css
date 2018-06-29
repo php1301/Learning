@@ -1,0 +1,73 @@
+.box{
+    border:4px solid #fff;
+    box-shadow:0 0 4px grey;
+    position:relative;
+}
+.box:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(45deg, #141414 0%, #691100 40%, #1b1b1b 100%);
+   opacity: 0.0;  /*sửa 0.3*/
+    transition:all 0.5s ease;
+}
+.box img{
+    width:100%;
+    height: auto;
+}
+.box .box-content{
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 38px;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .box-content{
+    background: rgba(0,0,0,0.5);
+}
+.box .box-content:after{
+    content: "";
+    border: 7px solid #fff;
+    position: absolute;
+    top:21px;
+    left: 20px;
+    right: 30px;
+    height: 35%;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .box-content:after{
+    top:60%;
+}
+.box .title{
+    color:#fff;
+    font-size:20px;
+    font-weight: bolder;
+    text-transform:uppercase;
+}
+.box .description{
+    position: relative;
+    top:5%;
+    color:#fff;
+    opacity:0;
+    transition: all 0.35s ease 0s;
+}
+.box:hover .description{
+    top:55%;
+    opacity:1;
+}
+@media only screen and (max-width: 990px) {
+    .box{
+        margin-bottom:15px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .box .title{ font-size: 15px;}
+    .box .description{ font-size: 13px; }
+    .box:hover .description{ top:48%; }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Panel</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+	<style rel="stylesheet" type="text/css">
+		.nen{
+			border: 1px solid #003ee6; margin-bottom:5px;
+		}
+	</style>
+</head>
+
+<body style="margin-top: 30px">
+	<div class="container">
+		<!-- Cơ bản -->	
+	  <div class="panel panel-default">
+		  <div class="panel-body">
+		  	<h4>Panel cơ bản</h4>
+		  	<p>Panels được tạo ra với các lớp <b>.panel</b> và các nội dung bên trong panle 
+		  		có class <b>.panel-body</b></p>
+		  </div>
+	  </div>
+	  <!-- Bổ sung dòng header -->
+	  <div class="panel panel-default">
+		  <div class="panel-heading">Panel Heading</div>
+		  <div class="panel-body">Bổ sung thêm tag div có class là <b>class="panel-heading"</b>
+		  	<p>Nếu đặt ở footer thì dùng <b>class="panel-footer"</b> </p> 
+		  </div>
+		</div>
+	
+		<!-- Sử dụng các class ngữ cảnh -->
+		<h2> Panel với các lớp ngữ cảnh</h2>
+		  <div class="panel panel-primary">
+		  	<div class="panel-heading">Primary Panel </div>
+		    <div class="panel-body">Panel với class <b>panel-primary</b></div>
+		  </div>
+		  <div class="panel panel-success">
+		  	<div class="panel-heading">Success Panel </div>
+		    <div class="panel-body">Panel với class <b>panel-success</b></div>
+		  </div>
+		  
+		  <!-- Panel Group -->
+		<h2> Panel Group</h2>
+		<p> Bọc các panel lại trong 1 tag div có <b>class="panel-group"</b> </p>
+		<div class="panel-group">
+		  <div class="panel panel-default">
+		    <div class="panel-body">Panel Content</div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-body">Panel Content</div>
+		  </div>
+		</div>
+	</div>
+
+	
+		<script src="Script/jquery-1.9.1.min.js"></script> 
+		<script src="Bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
