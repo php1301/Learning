@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS3 Transforms</title>
+<style> 
+	div
+	{
+		width:100px;
+		height:75px;
+		background-color:red;
+		border:1px solid black;
+	}
+	div#div2
+	{
+		transform:translate(50px,100px);	
+		/*The value translate(50px,100px) moves the element 50 pixels from the left, and 100 pixels from the top.*/
+		-ms-transform:translate(50px,100px); 
+		-moz-transform:translate(50px,100px); 
+		-webkit-transform:translate(50px,100px);
+		-o-transform:translate(50px,100px); 
+	}
+	div#div3
+	 {
+		 background-color:#FF0;
+		 transform: rotate(30deg);	/*The value rotate(30deg) rotates the element clockwise 30 degrees.*/
+		 -ms-transform: rotate(30deg);
+		 -webkit-transform: rotate(30deg);
+		 -o-transform: rotate(30deg); 
+		 -moz-transform: rotate(30deg);
+	 } 
+	div#div4
+	{
+		background-color:#3FF;margin:100px; 
+		transform:scale(2,4); 
+		/*The value scale(2,4) transforms the width to be twice its original size, and the height 4 times its original size.*/
+		-ms-transform:scale(2,4); 	
+		-moz-transform:scale(2,4); 	
+		-webkit-transform:scale(2,4);
+		-o-transform:scale(2,4); 	
+	}
+	div#div5
+	{
+		background-color:#3FF;
+		transform:skew(10deg,10deg); 
+		-ms-transform:skew(10deg,10deg); 	
+		-moz-transform:skew(10deg,10deg);	
+		-webkit-transform:skew(10deg,10deg);
+		-o-transform:skew(10deg,10deg);
+	}
+ </style> 
+</head>
+
+<body style="margin: 50px">
+	<div>Chào các bạn. Đây là tag div</div>
+
+	<!-- <div id="div2">Đây là minh họa Translate.</div> -->
+ 
+   	<!-- <div id="div3">Đây là minh họa Rotate</div> -->
+   	
+	<!-- <div id="div4">Đây là minh họa Scale</div> -->
+	
+	<div id="div5">Đây là minh họa Skew</div>
+</body>
+</html>

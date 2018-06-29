@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CSS3 Borders</title>
+<style>
+	div{
+		width: 300px; height: 100px; padding: 20px
+	}
+	div.A
+	 {
+		 font-size:16px; color:#F00; width:300px; text-align:center;
+		 border:2px solid #009;
+		 border-radius:30px;
+		 -moz-border-radius:30px; 
+	 } 
+	 div.B	
+	 {
+ 		 font-size:16px; color:#00C; width:300px; text-align:center;
+		 background:#FF3;
+		 box-shadow: 20px 10px 20px #F63;	/*phải, dưới, độ rộng bóng, màu bóng*/
+	 } 
+	 div.C
+	 {
+		 font-size:16px; color:#FFF; width:300px; text-align:center;
+		 border-width:15px; background:#0CF;
+		 border-image:url(../images/border.png) 40% / 15px / 0 round;
+		 -moz-border-image:url(../images/border.png) 40% / 15px / 0 round;
+		 -webkit-border-image:url(../images/border.png) 40% / 15px / 0 round;
+		 -o-border-image:url(../images/border.png) 40% / 15px / 0 round; 
+	 } 
+</style>
+</head>
+
+<body>
+	<div class="A">
+    	Ăn quả nhớ kẻ trồng cây<br />Uống nước nhớ nguồn
+    </div><br/>
+    
+	<div class="B">
+	 Con hơn cha là nhà có phúc <br />Trò hơn thầy là đất nước yên vui
+    </div><br /> <br />
+    
+	<div class="C">
+	 Muốn sang thì bắc cầu Kiều<br />Muốn con hay chữ phải yêu lấy thầy
+    </div>
+
+
+</body>
+</html>

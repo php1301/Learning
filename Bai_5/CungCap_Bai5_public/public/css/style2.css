@@ -1,0 +1,66 @@
+                @charset "utf-8";
+            .responsive2 {
+                padding: 0 6px;
+                float: left;
+                width: 31.3333%;
+            }
+            
+            .gallery2 img {
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+            }
+            
+            div.gallery2 {
+                border: none;
+                position: relative;
+                -webkit-animation: hinh 5s;
+                /* Safari 4.0 - 8.0 */
+                animation: hinh 2s;
+            }
+            
+            @media only screen and (max-width: 700px) {
+                .responsive2 {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }
+            }
+            
+            @media only screen and(max-width: 500px) {
+                .responsive2 {
+                    width: 100%;
+                }
+            }
+            
+            @-webkit-keyframes hinh {
+                0% {
+                    -webkit-transform: scaleX(2);
+                    transform: scaleX(2);
+                    -webkit-filter: blur(2px);
+                    filter: blur(2px);
+                    opacity: 0;
+                }
+                100% {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                    -webkit-filter: blur(0px);
+                    filter: blur(0px);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes hinh {
+                0% {
+                    -webkit-transform: scaleX(2);
+                    transform: scaleX(2);
+                    -webkit-filter: blur(2px);
+                    filter: blur(2px);
+                    opacity: 0;
+                }
+                100% {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                    -webkit-filter: blur(0px);
+                    filter: blur(0px);
+                    opacity: 1;
+                }

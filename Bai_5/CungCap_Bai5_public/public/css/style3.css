@@ -1,0 +1,86 @@
+.overlay {
+    transition: All 1s ease;
+    -webkit-transition: All 1s ease;
+    -moz-transition: All 1s ease;
+    -o-transition: All 1s ease;
+    transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -webkit-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -moz-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -o-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+    -ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+}
+
+div.gallery:hover .overlay {
+    transform: rotate(0deg) scale(0.965) skew(-180deg) translate(-9px);
+    -webkit-transform: rotate(0deg) scale(0.965) skew(-180deg) translate(-9px);
+    -moz-transform: rotate(0deg) scale(0.965) skew(-180deg) translate(-9px);
+    -o-transform: rotate(0deg) scale(0.965) skew(-180deg) translate(-9px);
+    -ms-transform: rotate(0deg) scale(0.965) skew(-180deg) translate(-9px);
+}
+
+@charset "utf-8";
+div.gallery {
+    border: 1px solid wheat;
+    position: relative;
+}
+
+div.gallery:hover .overlay {
+    width: 100%
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    font-size: 16px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+
+.text_2 {
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

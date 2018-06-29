@@ -1,0 +1,143 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+div.gallery {
+    border: 1px solid #ccc;
+	position: relative;
+}
+
+div.gallery:hover .overlay{
+    width: 100%;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+	opacity: 0.7;
+}
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    font-weight: 700;
+}
+.text_2 {
+  white-space: nowrap; 
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.h2 {
+    font-size: 45px;
+    font-weight: 900;
+	margin: 25px 0 0 0;
+	padding: 0
+}
+.h4 {
+    font-size: 35px;
+	color: dimgrey;
+	margin: 0 0 15px 0;
+	padding: 0
+}
+/* Bài 5.2 */
+.responsive2 {
+    padding: 0 6px;
+    float: left;
+    width: 33.3333%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive2 {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive2 {
+        width: 100%;
+    }
+}
+
+div.gallery2 {
+    border: none;
+	position: relative;
+	-webkit-animation: hinh 5s; /* Safari 4.0 - 8.0 */
+    animation: hinh 5s;  
+}
+
+div.gallery2 img {
+    width: 100%;
+    height: auto;
+	border-radius: 50%;
+	
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hinh {
+      0%   {opacity:0.1; left:300px; top:0px;}
+    100%  {opacity:1; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@-webkit-keyframes hinh {
+     0%   {opacity:0.1; left:300px; top:0px;}
+    100%  {opacity:1; left:0px; top:0px;}
+}
+
