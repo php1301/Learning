@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Tao_Form</title>
+	</head>
+
+	<body>
+		<form style="width: 500px;  border: 1px solid red">
+			<!--1. điều khiển cơ bản -->
+			<p><label for="thHoten"> Họ tên: </label> <input type="text" value="" id="thHoten" />   </p>
+			<p>Mật khẩu: <input type="password" value="" id="thMatkhau" />   </p>
+			<!-- sử dụng thuộc tính name để gom 2 điều khiển thành 1 nhóm -->
+			<p>Giới tính: <input type="checkbox"  id="thGioiTinh" checked /> Nam   </p>
+			<p>Giới tính: <input type="radio" id="thNu" name="GT" checked /><label for="thNu">Nữ</label> 
+				<input type="radio"  id="thNam" name="GT" /> <label for="thNam"> Nam</label>
+				<input type="radio"  id="thKhac" name="GT" /> <label for="thKhac">Khác</label>    </p>
+			<p><input type="button" value="Đăng nhập" /> </p>
+			<p><input type="submit" value="Submit" /> </p>    <!-- Khi nhấn vào sẽ gởi dữ liệu về server -->
+			
+			<!--2. điều khiển mở rộng -->
+			<p>Lý lịch: <textarea cols="50" rows="10"> </textarea></p>
+			<!-- Dạng combo box -->
+			<p>Nghề nghiệp:
+				<select>
+					<option value="1">Bác sĩ</option>
+					<option value="2" selected>Giáo viên</option>
+					<option value="3">Công nhân viên</option>
+					<option value="4">Nội trợ</option>
+				</select> 
+			</p>
+			<!-- Dạng ListBox -->
+			<p> Sở thích:
+				<select size="5" style="width: 200px" multiple>    <!-- multiple: cho phép chọn nhiều -->
+					<option value="1">Du lịch</option>
+					<option value="2" selected>Nghe nhạc</option>
+					<option value="3">Đọc sách</option>
+					<option value="4">Xem phim</option>
+					<option value="5">Chơi game</option>
+					<option value="6">Thể thao</option>
+					<option value="7">Hát karaoke</option>
+					<option value="8">Ngủ</option>
+					<option value="9">Ăn ngon</option>
+					<option value="10">Đánh đàn</option>
+				</select>
+			</p>
+		</form>
+		<p> </p>
+
+	</body>
+</html>
