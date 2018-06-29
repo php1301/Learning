@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <title>Jquery sideshow don gian</title>
+</head>
+
+<body>
+    <div class="slideshow1">
+        <img src="/images/portfolio-1.jpg" width="500" height="260" />
+        <img src="/images/portfolio-2.jpg" width="500" height="260" />
+        <img src="/images/portfolio-3.jpg" width="500" height="260" />
+        <img src="/images/portfolio-4.jpg" width="500" height="260" />
+        <img src="/images/portfolio-5.jpg" width="500" height="260" />
+    </div>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" lang="javascript">
+        $(function() {
+            $('.slideshow1 img:gt(0)').hide();
+            setInterval(function() {
+                $('.slideshow1 :first-child').fadeOut('slow')
+                    .next('img').fadeIn(1000)
+                    .end()
+                    .appendTo('.slideshow1');
+            }, 5000);
+        });
+        $(function() {
+            $('.slideshow1 img:gt(0)').hide();
+            setInterval(function() {
+                $('.slideshow1 :first-child').fadeOut('slow')
+                    .next('img').fadeIn(1000)
+                    .end()
+                    .appendTo('.slideshow1');
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>

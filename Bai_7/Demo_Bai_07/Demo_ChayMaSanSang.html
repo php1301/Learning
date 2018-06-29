@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>slideUp demo</title>
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+
+    <script>
+    	function AA()	//hàm này chưa chạy mã
+    	{
+    		alert("haha....");
+    	}
+    	//Hàm này có chạy mã
+        $(document).ready(function() 
+        {
+		    $("h3").click(function() 
+		    {
+                 alert("Cám ơn bạn đã theo dõi!");
+            });
+            alert("hehe....");  // mở rem dòng này thì sẽ thấy tác dụng
+		}); 
+
+		//Hàm AA sẽ được thực thi khi trang tải xong
+		
+    </script>
+</head>
+<body onload="AA();">
+    <h2> Minh họa Chạy mã lúc trang đã sẵn sàng</h2>
+
+	<h3>Click vào đây sẽ nhận được câu cám ơn.</h3>
+</body>
+</html>

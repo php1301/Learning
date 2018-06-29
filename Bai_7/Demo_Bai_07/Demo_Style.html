@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ</title>
+    <style> 
+        p { margin-left:10px; }
+        div{
+        	background-color:#ff0066;
+        	width: 200px;
+        	height: 200px;
+        }
+        .myclass{
+        background-color: #ffff00;  /* vàng */
+        	color:#0000ff;   /* xanh */
+        }
+    </style> 
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+     $(function () {
+         $("p").mouseover(function() {
+                $(this).css("color", "red");  //this: chính là element hiện hành được tham chiếu
+         });
+         $("p").mouseout(function() {
+                $(this).css("color", "black");	//Cú pháp thiết lập giá trị cho thuộc tính (set)
+         }); 
+         //đổi hình
+         $("img").mouseover(function() {
+                $(this).attr("src", "../images/Hinh02.jpg"); 
+         });
+         $("img").mouseout(function() {
+                $(this).attr("src", "../images/Hinh01.jpg");
+         });
+         //cú pháp nhận giá trị của CSS (get)
+         $("div").mouseover(function() {
+         		var mau = $(this).css("background-color");  //get
+                $("#mau").text(mau);  //Gán giá trị cho element
+         });
+         //Minh họa về toggle
+         $("section").mouseover(function() {
+         		// if ($(this).hasClass("myclass"))
+         			// $(this).removeClass("myclass");
+         		// else
+         			// $(this).addClass("myclass");
+          	
+               $(this).toggleClass("myclass");  //Nên dùng code dòng này
+         });
+      }); 
+    </script>
+</head>
+   
+<body>    
+    <p>Hãy rê chuột vào đây.</p> 
+ 
+    <p>Bạn sẽ thấy màu được thay đổi!!!</p>
+    
+    <img src="../images/Hinh01.jpg"/> 
+    
+    <div> Demo cú pháp nhận giá trị từ CSS</div>
+	<h2 id="mau"> [xuất giá trị màu] </h2>
+	
+	<section style="border: 1px solid #000000; width: 200px; height: 100px">
+		Demo về toggle
+	</section>
+
+</body>
+</html>

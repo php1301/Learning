@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ</title>
+    <style> 
+        p { margin-left:10px; }
+    </style> 
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+   <script type="text/javascript">
+     $(function () 
+     {
+         $("#btnXuat").click(function() 
+         {
+                var hoten= $("#txtHoten").val();  //truy xuất giá trị của ô nhập  (get) 
+                var diachi=$("#txtDiachi").val();
+                
+                $("#d1").text("<strong><em>" + hoten + "</em></strong>");   //tương tự innerText
+                $("#d2").html("<strong><em>" + diachi + "</em></strong>");  //tương tự innerHTML
+         });
+      }); 
+</script>
+
+</head>
+   
+<body>    
+  <div>
+	  	<form>
+	        <p>Họ và tên: <input type="text" id="txtHoten" value="Phạm Thiên Thanh" /></p>
+	        <p>Địa chỉ: <input type="text" id="txtDiachi" value="357 Lê Hồng Phong, Quận 10" /></p>
+	        <p><input type="button" id="btnXuat" value="Xuất"  /></p>
+		</form>
+			        
+	        <p style="color:#CD0A0A" id="d1">[Dạng text]</p>
+	        <p style="color:#0000FF" id="d2">[Dạng html]</p>
+        
+  </div>  
+
+ </body>
+</html>

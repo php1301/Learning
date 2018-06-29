@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="/css/style_layout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <h1>NỤ CƯỜI ĐẸP NHẤT</h1>
+    <div class="row" id="danhsach"> </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var chuoi;
+            $.getJSON("file/DanhSachNuCuoi.json", function(result) {
+                $.each(result, function(i, field) {
+                    chuoi = '<div class="col-4 col-s-3">';
+                    chuoi += '<img src="/images/' + field.Hinh + '" width="100%" />';
+                    chuoi += '<h4>' + field.TenSP + '</h4>';
+                    chuoi += '</div>';
+                    $('#danhsach').append(chuoi);
+
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

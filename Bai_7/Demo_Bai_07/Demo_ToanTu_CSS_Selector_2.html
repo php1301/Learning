@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo toán tử kết hợp với CSS selector</title>
+		<script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script lang="JavaScript">
+			$(function()
+			{
+				$("div[id]").css("color","#0000CC");  //tham chiếu tag div có khai báo thuộc tính id (không phân biệt giá trị))
+				$("div[class=yourClass]").css("color","#009933");  //tham chiếu tag div có khai báo thuộc tính class=yourClass
+				
+				$("input[type=text]").width("200")
+									.css({"background":"yellow","color":"brown"});
+				
+				$("input[type=button]").width("100")
+									.css({"background":"#ff0066","color":"#ffffff"});
+									
+			});
+			
+		</script>
+	</head>
+
+	<body>
+		<div> Chào các bạn đến với jQuery !!! ==> div không có id	</div>
+		<div id="mot" >Chào các bạn đến với jQuery !!!	</div>
+		<div id="hai" > Chào các bạn đến với jQuery !!!	</div>
+				
+		<div class="myClass"> Ví dụ về Toán tử [ ] </div>
+		<div class="yourClass"> Ví dụ về Toán tử [ ] </div>
+		
+		<form>
+			<p>Nhập họ tên: <input type="text" value="Phạm Thiên Thanh" /></p>
+			<p>Nhập email: <input type="text" value="abc@gmail.com" /></p>
+			<p><input type="button" value="Thực hiện" /></p>
+		</form>
+
+	</body>
+</html>

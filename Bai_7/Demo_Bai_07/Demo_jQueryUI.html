@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Demo_jQueryUI</title>
+		<link  rel="stylesheet" type="text/css" href="jquery/jquery-ui.min.css" />
+		<script type="text/javascript" lang="JavaScript" src="jquery/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" lang="JavaScript" src="jquery/jquery-ui.min.js" ></script>
+		<script type="text/javascript" lang="JavaScript" src="jquery/datepicker-vi.js" ></script>
+		<script>
+			$(function(){
+				 $( "#datepicker" ).datepicker( $.datepicker.regional[ "vi" ] ); 
+			});
+		</script>
+	</head>
+
+	<body>
+		<h1>Demo jQuery UI Plugin</h1>
+		<div>
+			<p>Chọn ngày tháng</p>
+			<p><input type="text" id="datepicker" /></p>
+		</div>
+	</body>
+</html>

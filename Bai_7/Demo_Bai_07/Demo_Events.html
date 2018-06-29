@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ví dụ</title>
+    <style type="text/css">
+        div{background-color:Silver; border:solid 1px red}
+    </style>
+
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    	//nhấn chuột vào trang web thì có hiệu ứng sau:
+	   $(function()
+	   {
+	   		$("body").click(function(){
+	   			if($("div:first").is(":hidden"))   //div đầu tiên bị che
+	   				$("div:first").slideDown(5000);   // Hiển thị sổ xuống trong 5s hoặc slow/fast
+	   			else
+	   				$("div:first").hide("slow");    //che
+	   		});
+	   		
+	   		$("#hinh1").mouseover(function(){
+	   			$(this).attr("src","../images/Hinh04.jpg");
+	   		});
+	   		$("#hinh1").mouseout(function(){
+	   			$(this).attr("src","../images/Hinh03.jpg");
+	   		});
+	   });   
+	      
+    </script>
+</head>
+   
+<body>    
+    <div> Đây là div đầu tiên
+       	<pre>
+       	Có tài mà cậy chi tài,
+        Chữ Tài liền với chữ Tai một vần
+        Ðã mang lấy Nghiệp vào thân,
+        Cũng đừng trách lẫn Trời gần, Trời xa.
+        Thiện căn ở tại lòng ta,
+        Chữ Tâm kia mới bằng ba chữ Tàì”
+        </pre>
+  </div>
+  <p> </p>
+  <div>Chữ Tâm kia mới bằng ba chữ Tài</div>
+  
+  <img src="../images/Hinh03.jpg" id="hinh1" />
+</body>
+</html>

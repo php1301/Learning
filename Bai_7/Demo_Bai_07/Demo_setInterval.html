@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Demo_setInterval</title>
+		
+	</head>
+
+	<body>
+		<h2>Demo hàm window.setInterval</h2>
+		<!--1. Hàm setInterval(tên_hàm, millisecond);
+			   Thực hiện tên_hàm trong khoảng thời gian tính bằng millisecond
+			2. Hàm clearInterval(n);
+				Ngưng thực hiện hàm. 
+		-->
+		<div style="color:red; font-size: 16px" id="thGio"> </div>
+		<form>
+			<input type="button" value="Ngưng đồng hồ" onclick="clearInterval(n);" />
+		</form>	
+		 <script>
+			function in_gio()
+			{
+				var ngay = new Date();
+				var gio = ngay.getHours();				
+				var phut = ngay.getMinutes();
+				var giay = ngay.getSeconds();
+				
+				thGio.innerHTML = gio + ":" + phut + ":" + giay;
+			}
+			var n = setInterval(in_gio, 1000);
+			
+		</script>
+	</body>
+</html>

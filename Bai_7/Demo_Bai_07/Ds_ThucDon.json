@@ -1,0 +1,12 @@
+[
+	{"ID":"1","Ten":"Bún bò Huế","DonGia":45000},
+	{"ID":"2","Ten":"Bún thịt nướng","DonGia":35000},
+	{"ID":"3","Ten":"Phở bò","DonGia":47000},
+	{"ID":"4","Ten":"Hủ tiếu Nam Vang","DonGia":40000},
+	{"ID":"5","Ten":"Bánh mì thịt","DonGia":15000},
+	{"ID":"6","Ten":"Bánh cuốn","DonGia":30000},
+	{"ID":"7","Ten":"Bún chả giò","DonGia":35000},
+	{"ID":"8","Ten":"Cafe đá","DonGia":10000},
+	{"ID":"9","Ten":"Cafe sữa đá","DonGia":15000},
+	{"ID":"10","Ten":"Cam vắt","DonGia":20000}
+] 

@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+.slideshow1 
+{
+	position:relative; 
+	width:500px; 
+	height:260px;
+}
+.slideshow1 img 
+{
+	position:absolute;
+	left:0; 
+	top:0;
+}
+
+/*sideShow 2*/
+#wrap-slide{
+	margin: 0 auto;
+	padding: 50px;
+	width: 100%;
+	background: rgba(255,255,255,0.7);
+	
+}
+#slideshow{
+position: relative;
+width: 100%; height: auto;
+
+}
+#slideshow li img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 0;
+}
+#slideshow li p{
+	position: absolute;
+	bottom:0; left:0;
+	z-index: 0;
+	width: 100%; height: 50px;
+	color: #efefef;
+	text-shadow: 0px 0px 2px #000;
+	background: rgba(0,0,0,0.3);
+	filter:progid:DXImageTransform.Microsoft.Gradient( GradientType=1, StartColorStr='#70000000', EndColorStr='#70000000');
+}
+#slideshow li p span{
+	padding: 5px 10px;
+	display: block;
+}
+#slideshow li p a{
+	color: #efefef;
+	text-decoration: none;
+}
+#slideshow li p a:hover{
+	color: #ffff00;
+}
+#slideshow .current img, #slideshow .current p{z-index: 50;}
+#next, #prev{
+	position: absolute;
+	width: 18px; height: 31px;
+	z-index: 1000;
+	text-indent: -99999px;
+	cursor: pointer;
+}
+#next{
+	right: -25px;
+    top: 0;
+    bottom: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+	background: url(../img/next-arrow.png) no-repeat 0 0;
+}
+#prev{
+	left: -25px;
+	background: url(../img/prev-arrow.png) no-repeat 0 0;
+}
+@media only screen and (max-width: 768px)
+{
+  #next{
+		top: 60px;
+	}
+}
+#controlNav{
+	position: absolute;
+	top:0; right:0;
+	z-index: 1000;
+	padding: 5px;
+}
+#controlNav a{
+	display: block; float: left;
+	width:22px; height:22px;
+	background:url(images/bullets.png) no-repeat;
+	cursor: pointer;
+}
+.active{
+	background-position:0 -22px !important;
+}
+
+div.chitiet
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+	text-align: center;
+}
+div.chitiet img
+{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+	position: relative;
+}
+
+div.chitiet .hinhnho
+{
+    width: 100%;
+	position: relative;
+    height: 71px;
+    margin: 0 auto;
+	text-align: center;
+}
+div.chitiet .hinhnho img
+{
+    width: 61px;
+    height: 71px;
+    margin: 0 auto;
+}
+section.chitiet .hinh .hinhnho img:hover
+{
+    cursor: pointer;
+}
+div.thongtin
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}	
+.price {
+    font-family: 'UTMCafeta', Arial, sans-serif;
+    font-size: 30px;
+    color: #db0000;
+    line-height: 10px;
+}
+.hinh_theo_mau {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 10px;
+}
+.hinh_theo_mau img{
+    width: 20px;   
+    background-clip: padding-box;
+}
+.hinh_theo_mau img:hover{
+    cursor: pointer;
+}
